@@ -4,13 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Branch 1</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 1170px;
+            padding:0px 15px;
+            margin:auto;
+        }
+        ul{
+            list-style: none;
+        }
+        header{
+            height: 50px;
+            background-color: aquamarine;
+        }
+        nav.nav{
+            height:50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            flex:30%;
+        }
+        ul.nav-links{
+            flex:70%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        ul.nav-links li{
+
+        }
+        ul.nav-links li a{
+            text-decoration: none;
+            padding:5px 8px;
+            margin:0px 0px;
+            color: #3F51B5;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <h3>
-            This file belongs to only branch1.
-            This file edited from branch1.
-        </h3>
-    </div>
+    <Header>
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <span>
+                        Logo
+                    </span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </Header>
 </body>
 </html>
