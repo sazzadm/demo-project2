@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Branch 1</title>
     <style>
+        :root{
+            --header_bg_color: #376f5c;
+            --footer_bg_color:#555;
+        }
         *{
             margin:0px;
             padding:0px;
@@ -51,9 +55,20 @@
             font-family: serif;
             font-size: 1.1rem;
         }
+        footer{
+            background-color: #555;
+
+        }
+        .footer-content-wrapper p{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
+    <!-- header start -->
     <Header>
         <div class="container">
             <nav class="nav">
@@ -72,5 +87,16 @@
             </nav>
         </div>
     </Header>
+    <!-- header end -->
+    <!-- footer start -->
+    <footer>
+        <div class="container">
+            <div class="footer-content-wrapper">
+                <p>
+                    &copy; copyright by Author.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
